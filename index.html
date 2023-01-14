@@ -45,6 +45,7 @@
                 <!-- this is user picture  -->
                 <div>
                     <a href="#"><img class="nav-img user" src="images/user-pic.jpg"></a>
+
                 </div>
 
             </div>
@@ -82,10 +83,11 @@
     <main>
 
         <div class="carousal">
-            <div><img src="images/tareefan.jpg"></div>
-            <div><img src="images/mannbharya.webp"></div>
-            <div><img src="images/aboveall.webp"></div>
+            <div><img src="https://a10.gaanacdn.com/gn_img/showcase/qaLKY23pO4/qaLKYowWpO/size_m_1670584793.webp"></div>
+            <div><img src="https://a10.gaanacdn.com/gn_img/showcase/ZaP374RWDy/ZaP372BKDy/size_m_1641541612.webp"></div>
+            <div><img src="https://a10.gaanacdn.com/gn_img/showcase/81l3Me3rMx/1l3M7VDbrM/size_m_1640959707.webp"></div>
         </div>
+        
         <div class="heading-main">Latest Releases</div>
         <div class="latest-release">
             <div class="outer">
@@ -93,19 +95,23 @@
                 <div class="box-1">
                     <div class="song-1"><img src="images/bhediya.jpg"></div>
                     <div class="name-1">&emsp;Bhediya<div style="font-size: x-small; margin-left: 13px;">May 2022</div></div>
+                    <div class="play-icon"><i id="icon-play" class="fa-solid fa-play"></i></div>
                 </div>
                 
                 <div class="box-1">
                     <div class="song-1"><img src="images/bhesharam.jpg"></div>
                     <div class="name-1">&emsp;Besharam<div style="font-size: x-small; margin-left: 13px;">May 2022</div></div>
+                    <div class="play-icon"><i id="icon-play" class="fa-solid fa-play"></i></div>
                 </div>
                 <div class="box-1">
                     <div class="song-1"><img src="images/shaan.jpg"></div>
                     <div class="name-1">&emsp;Shaan<div style="font-size: x-small; margin-left: 13px;">May 2022</div></div>
+                    <div class="play-icon"><i id="icon-play" class="fa-solid fa-play"></i></div>
                 </div>
                 <div class="box-1">
                     <div class="song-1"><img src="images/khanabad.jpg"></div>
                     <div class="name-1">&emsp;Suroor<div style="font-size: x-small; margin-left: 13px;">May 2022</div></div>
+                    <div class="play-icon"><i id="icon-play" class="fa-solid fa-play"></i></div>
                 </div>
             </div>
         </div>
@@ -290,7 +296,13 @@
         <div class="aside-col similar-artist">
             <div class="flex heading">
                 <h3>Queue</h3>
-                <p><a href="#">View All</a></p>
+                <p id="view-all"><a href="#">View All</a>
+                </p>
+                
+            </div>
+            <div id="view-dd" class="view call">
+                <div style="padding: 3px;"><a href="#">Playlist</a></div>
+                <div style="padding: 3px;"><a href="#">View All</a></div>
             </div>
             <div class="scroll">
                 <div class="flex song-aside">
@@ -624,8 +636,9 @@
             </div>
         </div>
     </footer>
-    <audio id="audio" src="https://voca.ro/16uvBQT4MPVb"></audio>
+    <audio id="audio" src="/audio/Elevated.mp3" type="mp3"></audio>
     <script src="script.js"></script>
+    
 </body>
 
 </html>
