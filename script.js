@@ -2,6 +2,8 @@ let pause1 = document.getElementById("pause");
 let music = document.getElementById("audio");
 let rotate =document.getElementById("rotate");
 let isPlaying = false;
+
+
 // for playing the music 
 const playMusic = ()=>{
     isPlaying = true;
@@ -10,6 +12,8 @@ const playMusic = ()=>{
     rotate.classList.toggle("anime");
 
 }
+
+
 // for pausing the music 
 const pauseMusic = ()=>{
     isPlaying = false;
@@ -24,10 +28,6 @@ pause1.addEventListener("click",()=>{
 });
 
 
-
-
-
-
 // for liking the song 
 
 let like = document.getElementById("like");
@@ -36,3 +36,11 @@ like.onclick = ()=>{
     liked = false;
     like.classList.toggle("fa-solid");
 }
+
+
+// for adding view option
+let view = document.getElementById("view-all");
+view.addEventListener('click',()=>{
+    let a = document.getElementById("view-dd");
+    a.classList.toggle("view-visi");
+});
