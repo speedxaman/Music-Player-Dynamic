@@ -189,21 +189,6 @@ input {
         
         
     }
-
-    /* .flex {
-        display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: space-between;
-    } */
-
-
-
-
-
-
-
-
 }
 
 /* main section  */
@@ -223,10 +208,11 @@ main{
     height: 100%;
     justify-content: space-evenly;
     
+    
 }
 
 .carousal img:hover{
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 /* ALL HEADINGS */
 .heading-main{
@@ -270,6 +256,22 @@ main{
     color: antiquewhite;
     
 }
+.play-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#icon-play{
+    margin-left: -80px;
+    font-size: 20px;
+    visibility: hidden;
+    
+}
+.box-1:hover #icon-play{
+    visibility: visible;
+    cursor: pointer;
+}
+
 /* POPULAR ARTISTS */
 .popular-artist{
     width: 100%;
@@ -285,6 +287,8 @@ main{
     border-radius: 50%;
     
 }
+
+
 /* POPULAR ARTIST NAMES */
 .name-flex{
     display: flex;
@@ -301,7 +305,7 @@ main{
 }
 .artist-1 img:hover{
     transform: scale(1.1);
-    border: 2px solid orangered;
+    /* border: 2px solid orangered; */
 
 }
 @media screen and (max-width: 1057px) {
@@ -342,7 +346,7 @@ main{
 }
 .genre-1:hover{
     transform: scale(1.1);
-    border: 2px solid orangered;
+    /* border: 2px solid orangered; */
 
 }
 .genre-back1{
@@ -435,7 +439,7 @@ main{
 }
 .lat-eng-box img:hover{
     transform: scale(1.1);
-    border: 3px dotted orangered;
+    border: 3px dotted rgb(27, 134, 216);
     border-style:ridge;
 }
 .song-1{
@@ -448,7 +452,7 @@ main img{
 }
 main{
     font-size: small;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 /* Aside Section  */
 aside {
@@ -469,14 +473,9 @@ aside {
     padding: 10px;
 }
 
-
-
-
-
 .heading {
     justify-content: space-between;
     height: 20px;
-
 }
 
 .heading p {
@@ -490,6 +489,25 @@ aside {
     width: 100%;
 
 }
+.view{
+    width: 80px;
+    height: 50px;
+    position: absolute;  
+    right: 48px;
+    background-color: rgb(8, 4, 28);
+    color: #f5eeee;
+    padding: 10px;
+    
+}
+.call{
+    visibility: hidden;
+}
+.view-visi{
+    visibility: visible;
+}
+.animation{
+    transition: all 1s;
+}
 
 .scroll {
     height: 100%;
@@ -500,8 +518,6 @@ aside {
 .pic img {
     height: 80px;
     width: 80px;
-    
-
 }
 
 .pic img:hover {
@@ -578,18 +594,19 @@ aside {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 2px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
+    background-color: transparent;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: slategrey;
+    /* background: transparent; */
     border-radius: 10px;
 }
 
@@ -609,7 +626,7 @@ aside {
     display: flex;
     flex-shrink: inherit;
     bottom: 0;
-    background-color: #282828;
+    background-color: #141313;
     justify-content: space-evenly;
     font-size: small;
     /* padding-left: 80px;
